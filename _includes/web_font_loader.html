@@ -13,24 +13,9 @@
     wf.async = 'true';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
-  })();
+  })(); 
+</script>
 
-  WebFontConfig = {
-      active: function() {
-        sessionStorage.fonts = true;
-    }
-  };
-</script>
-<script>
-  (function() {
-    if (sessionStorage.fonts) {
-      console.log("Fonts installed.");
-      document.documentElement.classList.add('wf-active');
-    } else {
-      console.log("No fonts installed.");
-    }
-  })();
-</script>
 <noscript>
   <link rel="stylesheet" href="{{ "/css/fonts.css" | prepend: site.baseurl }}">
 </noscript>
