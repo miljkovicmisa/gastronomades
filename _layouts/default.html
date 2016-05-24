@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	{% include head.html %}
 	<body>
-	<!--#echo var="DOCUMENT_URI" -->
 		<div>
 			{% include header.html %}
 			<main class="page-content">
@@ -11,7 +9,6 @@
 			</main>
 			{% include aside.html %}
 		</div>
-		{% include font_face_observer.html %}
 		{% include regular_scripts.html %}
 		{% if page.url == '/search/' %}{% include search_scripts.html %}{% endif %}	
 	</body>

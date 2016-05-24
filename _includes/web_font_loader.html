@@ -1,8 +1,21 @@
+<script>
+  (function() {
+    if (sessionStorage.fonts) {
+      console.log("Fonts installed.");
+      document.documentElement.classList.add('wf-active');
+    } else {
+      console.log("No fonts installed.");
+    }
+  })();
+</script>
 <script type="text/javascript">
   WebFontConfig = {
     custom: {
     families: ['gfs_didot:n4,i4,n7,i7,n9' , 'gfs_neohellenic:n4,i4,n7,i7'],
     urls: ['{{ "/css/fonts.css" | prepend: site.baseurl }}']
+  }
+    active: function() {
+    sessionStorage.fonts = true;
   }
   };
   (function() {
