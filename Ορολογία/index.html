@@ -1,0 +1,10 @@
+---
+layout: page
+title: Λεξικό όρων
+permalink: /terminology/
+---
+{% capture thelistings %}{% for listing in site.data.terminology %}
+   <tr><td>{{ listing.label }}</td><td>{{ listing.desc }}</td></tr>{% endfor %}
+{% endcapture %}
+{% assign allsortedlistings = thelistings | split:"   " | sort %}{% assign lastletter = "" %}<table>{% for allterms in allsortedlistings %}{% assign tmpletter = allterms | slice: 8 | upcase %}{% if tmpletter != lastletter %}  <tr class="tmpletter"><th colspan="2">{{ tmpletter }}</th></tr>
+{% endif %}  {{ allterms }}{% assign lastletter = tmpletter %}{% endfor %}</table>

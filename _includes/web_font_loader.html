@@ -1,0 +1,76 @@
+<script type="text/javascript">
+  WebFontConfig = {
+    custom: {
+    families: ['gfs_didot:n4,i4,n7,i7,n9' , 'gfs_neohellenic:n4,i4,n7,i7'],
+    urls: ['{{ "/css/fonts.css" | prepend: site.baseurl }}']
+  }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+</script>
+
+<noscript>
+  <link rel="stylesheet" href="{{ "/css/fonts.css" | prepend: site.baseurl }}">
+</noscript>
+
+<style type="text/css">
+
+.wf-active p {
+  /* styles for custom fonts */
+}
+
+.wf-inactive p {
+  /* use fallback fonts */
+}
+
+
+.wf-active body {
+        font-family: 'gfsdidot' , serif;
+    }
+
+
+.wf-active h1 {
+    font-family: 'gfs_didot';
+    font-weight: 900;
+}
+
+.wf-active h2 {
+    font-family: 'gfs_neohellenic';
+    font-weight: 700;
+}
+
+.wf-active h3 {
+    font-family: 'gfs_neohellenic';
+    font-style: italic
+}
+
+.wf-active h4 {
+    font-family: 'gfs_neohellenic'
+}
+
+.wf-active h5 {
+    font-family: 'gfs_didot';
+    font-weight: 700;
+    font-style: italic;
+}
+
+.wf-active p {
+    font-family: 'gfs_didot'
+}
+
+.wf-active .footnotes li, .wf-active .footnotes p {
+    font-family: 'gfs_neohellenic';
+    font-style: italic;
+}
+
+.wf-active th {
+    font-family: 'gfs_didot_display'
+}
+</style>

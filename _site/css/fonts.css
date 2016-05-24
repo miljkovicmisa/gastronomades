@@ -1,0 +1,131 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'gfs_didot';
+    src: url('../fonts/gfsdidot.eot');
+    src: url('../fonts/gfsdidot.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gfsdidot.woff2') format('woff2'),
+         url('../fonts/gfsdidot.woff') format('woff'),
+         url('../fonts/gfsdidot.ttf') format('truetype'),
+         url('../fonts/gfsdidot.svg#gfs_didotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gfs_didot';
+    src: url('../fonts/gfsdidotitalic.eot');
+    src: url('../fonts/gfsdidotitalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gfsdidotitalic.woff2') format('woff2'),
+         url('../fonts/gfsdidotitalic.woff') format('woff'),
+         url('../fonts/gfsdidotitalic.ttf') format('truetype'),
+         url('../fonts/gfsdidotitalic.svg#gfs_didotitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'gfs_didot';
+    src: url('../fonts/gfsdidotbold.eot');
+    src: url('../fonts/gfsdidotbold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gfsdidotbold.woff2') format('woff2'),
+         url('../fonts/gfsdidotbold.woff') format('woff'),
+         url('../fonts/gfsdidotbold.ttf') format('truetype'),
+         url('../fonts/gfsdidotbold.svg#gfs_didotbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'gfs_didot';
+    src: url('../fonts/gfsdidotbolditalic.eot');
+    src: url('../fonts/gfsdidotbolditalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gfsdidotbolditalic.woff2') format('woff2'),
+         url('../fonts/gfsdidotbolditalic.woff') format('woff'),
+         url('../fonts/gfsdidotbolditalic.ttf') format('truetype'),
+         url('../fonts/gfsdidotbolditalic.svg#gfs_didotbold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'gfs_didot';
+    src: url('../fonts/gfs_didot_display.eot');
+    src: url('../fonts/gfs_didot_display.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gfs_didot_display.woff2') format('woff2'),
+         url('../fonts/gfs_didot_display.woff') format('woff'),
+         url('../fonts/gfs_didot_display.ttf') format('truetype'),
+         url('../fonts/gfs_didot_display.svg#gfs_didot_displayregular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gfs_neohellenic';
+    src: url('../fonts/gfsneohellenic.eot');
+    src: url('../fonts/gfsneohellenic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gfsneohellenic.woff2') format('woff2'),
+         url('../fonts/gfsneohellenic.woff') format('woff'),
+         url('../fonts/gfsneohellenic.ttf') format('truetype'),
+         url('../fonts/gfsneohellenic.svg#gfs_neohellenicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gfs_neohellenic';
+    src: url('../fonts/gfsneohellenicitalic.eot');
+    src: url('../fonts/gfsneohellenicitalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gfsneohellenicitalic.woff2') format('woff2'),
+         url('../fonts/gfsneohellenicitalic.woff') format('woff'),
+         url('../fonts/gfsneohellenicitalic.ttf') format('truetype'),
+         url('../fonts/gfsneohellenicitalic.svg#gfs_neohellenicitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+@font-face {
+    font-family: 'gfs_neohellenic';
+    src: url('../fonts/gfsneohellenicbold.eot');
+    src: url('../fonts/gfsneohellenicbold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gfsneohellenicbold.woff2') format('woff2'),
+         url('../fonts/gfsneohellenicbold.woff') format('woff'),
+         url('../fonts/gfsneohellenicbold.ttf') format('truetype'),
+         url('../fonts/gfsneohellenicbold.svg#gfs_neohellenicbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gfs_neohellenic';
+    src: url('../fonts/gfsneohellenicbolditalic.eot');
+    src: url('../fonts/gfsneohellenicbolditalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gfsneohellenicbolditalic.woff2') format('woff2'),
+         url('../fonts/gfsneohellenicbolditalic.woff') format('woff'),
+         url('../fonts/gfsneohellenicbolditalic.ttf') format('truetype'),
+         url('../fonts/gfsneohellenicbolditalic.svg#gfs_neohellenicbold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}

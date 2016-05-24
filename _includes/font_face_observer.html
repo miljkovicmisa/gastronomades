@@ -1,0 +1,47 @@
+<script src="{{ "/scripts/fontfaceobserver.js" | prepend: site.baseurl }}"></script>
+<script>
+    (function( w ){
+    if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
+        return;
+    }
+    var font1 = new w.FontFaceObserver( "gfs_didot", {
+        weight: 400
+    });
+    var font2 = new w.FontFaceObserver( "gfs_didot", {
+        weight: 400,
+        style: "italic"
+    });
+    var font3 = new w.FontFaceObserver( "gfs_didot", {
+        weight: 700,
+        style: "italic"
+    });
+    var font4 = new w.FontFaceObserver( "gfs_didot", {
+        weight: 700,
+        style: "normal"
+    });
+    var font5 = new w.FontFaceObserver( "gfs_didot", {
+        weight: 900,
+        style: "normal"
+    });
+    var font6 = new w.FontFaceObserver( "gfs_neohellenic", {
+        weight: 400
+    });
+    var font7 = new w.FontFaceObserver( "gfs_neohellenic", {
+        weight: 400,
+        style: "italic"
+    });
+    var fon8 = new w.FontFaceObserver( "gfs_neohellenic", {
+        weight: 700,
+        style: "normal"
+    });
+    var font9 = new w.FontFaceObserver( "gfs_neohellenic", {
+        weight: 700,
+        style: "italic"
+    });
+    w.Promise
+        .all([font1.check(), font2.check(), font3.check(), font4.check(), font5.check(), font6.check(), font7.check(), font8.check(), font9.check()])
+        .then(function(){
+            w.document.documentElement.className += " fonts-loaded";
+        });
+    }( this ));
+</script>

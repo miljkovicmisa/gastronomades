@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<article>
+		<header>
+			<hgroup>
+				<h2>{{ page.title }}</h2>
+				<h4>{{ page.subtitle }}</h4>
+			</hgroup>
+		</header>
+		<section>
+			<header>
+				<h4>Υλικά</h4>			
+			</header>
+			<ul>{% capture allingredients %}{% for ingredient in page.ingredients %}{{ ingredient }}{% endfor %}{% endcapture %}{% assign words = allingredients | split: ', ' %}
+{% for word in words %}				<li markdown="1">{{ word }}</li>
+{% endfor %}			</ul>
+			<header>
+				<h4>Εκτέλεση</h4>
+			</header>
+				{{ page.instructions }}
+			<footer>
+
+			{{ post.content }}
+				<ol>
+					{{ page.footer }}
+				</ol>
+			</footer>
+		</section>
+</article>
+
+    {% for post in site.categories.recipe %}
+        {% if post.url == page.url %}
+            {% assign post_index0 = forloop.index0 %}
+            {% assign post_index1 = forloop.index %}
+        {% endif %}
+    {% endfor %}
+    {% for post in site.categories.recipe %}
+        {% if post_index0 == forloop.index %}
+            {% assign next_post = post.url %}
+            {% assign next_post_title = post.title %}
+        {% endif %}
+        {% if post_index1 == forloop.index0 %}
+            {% assign prev_post = post.url %}
+            {% assign prev_post_title = post.title %}
+        {% endif %}
+    {% endfor %}
+    {% if next_post %}
+        <a href="{{ next_post }}">{{ next_post_title }}</a> <br>
+    {% endif %}
+    {% if prev_post %}
+        <a href="{{ prev_post }}">{{ prev_post_title }}</a> <br>
+    {% endif %}
